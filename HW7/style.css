@@ -1,0 +1,408 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #1f2b36;
+    background: #ffffff;
+}
+
+.sidebar {
+    width: 95px;
+    height: 100vh;
+    background-color: #1d2a34;
+    z-index: 1000;
+}
+
+.sidebar a {
+    width: 100%;
+    height: 76px;
+    color: #ffffff;
+    font-size: 25px;
+}
+
+.sidebar a:first-child {
+    margin-top: 18px;
+}
+
+.sidebar a:hover {
+    color: #19b5fe;
+    background-color: rgba(255, 255, 255, 0.03);
+}
+
+.main-content {
+    margin-left: 95px;
+}
+
+.banner {
+    min-height: 655px;
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.48),
+            rgba(0, 0, 0, 0.48)
+        ),
+        url("banner.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.banner h1 {
+    font-size: 36px;
+    font-weight: 400;
+    margin-bottom: 25px;
+}
+
+.banner p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.banner p a {
+    color: #19b5fe;
+    text-decoration: none;
+}
+
+.banner .btn-dark {
+    background-color: #1d2a34;
+    border: none;
+    border-radius: 4px;
+    font-size: 15px;
+}
+
+.banner .btn-dark:hover {
+    background-color: #263844;
+}
+
+.gallery-section {
+    background-color: #ffffff;
+    padding: 75px 7% 75px;
+}
+
+.gallery-container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.gallery-section h2 {
+    font-size: 29px;
+    font-weight: 400;
+    margin-bottom: 55px;
+}
+
+.photo {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    overflow: hidden;
+    border-radius: 3px;
+    background-color: #eeeeee;
+}
+
+.photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.photo:hover img {
+    transform: scale(1.05);
+}
+
+.custom-blue-btn {
+    background-color: #19b5fe;
+    border: none;
+    border-radius: 3px;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.custom-blue-btn:hover {
+    background-color: #09a7f1;
+    color: #ffffff;
+}
+
+.info-section {
+    background-color: #d3d3d3;
+    padding: 70px 0 75px;
+}
+
+.info-container {
+    max-width: 1150px;
+    margin: 0 auto;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.info-row {
+    align-items: flex-start;
+}
+
+.info-section h2 {
+    font-size: 26px;
+    font-weight: 400;
+    margin-bottom: 28px;
+    color: #1f2b36;
+}
+
+.about-column {
+    padding-right: 35px;
+}
+
+.about-column p {
+    font-size: 15px;
+    line-height: 1.7;
+    color: #38434c;
+    margin-bottom: 27px;
+    text-align: left;
+}
+
+.follow-title {
+    margin-top: 40px;
+    margin-bottom: 18px !important;
+}
+
+.social-icons {
+    display: flex;
+    gap: 22px;
+    margin-top: 15px;
+}
+
+.social-icons a {
+    color: #19b5fe;
+    font-size: 23px;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: #09a7f1;
+}
+
+.contact-column {
+    padding-left: 35px;
+}
+
+.contact-column form {
+    width: 100%;
+}
+
+.contact-column .form-label {
+    display: block;
+    font-size: 14px;
+    color: #263540;
+    margin-bottom: 7px;
+}
+
+.contact-column .form-control {
+    width: 100%;
+    background-color: #ffffff;
+    border: 1px solid #eeeeee;
+    border-radius: 3px;
+    color: #333333;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    padding: 11px 13px;
+    box-shadow: none;
+}
+
+.contact-column input.form-control {
+    height: 43px;
+}
+
+.contact-column textarea.form-control {
+    min-height: 160px;
+    resize: vertical;
+}
+
+.contact-column .form-control:focus {
+    background-color: #ffffff;
+    border-color: #19b5fe;
+    box-shadow: none;
+    outline: none;
+}
+
+.contact-column .form-control::placeholder {
+    color: #888888;
+}
+
+.send-button {
+    width: 100%;
+    height: 38px;
+    background-color: #19b5fe;
+    color: #ffffff;
+    border: none;
+    border-radius: 1px;
+    font-size: 12px;
+    font-weight: 400;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.send-button:hover {
+    background-color: #09a7f1;
+}
+
+footer {
+    min-height: 105px;
+    background-color: #ffffff;
+    color: #6a7278;
+    font-size: 13px;
+    padding: 20px;
+}
+
+footer a {
+    color: #19b5fe;
+    text-decoration: none;
+}
+
+@media (max-width: 991px) {
+    .sidebar {
+        width: 80px;
+    }
+
+    .main-content {
+        margin-left: 80px;
+    }
+
+    .sidebar a {
+        height: 75px;
+        font-size: 23px;
+    }
+
+    .banner {
+        min-height: 540px;
+    }
+
+    .gallery-section {
+        padding-left: 7%;
+        padding-right: 7%;
+    }
+
+    .info-container {
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+
+    .about-column {
+        padding-right: 20px;
+    }
+
+    .contact-column {
+        padding-left: 20px;
+    }
+}
+
+@media (max-width: 767px) {
+    .sidebar {
+        width: 70px;
+    }
+
+    .main-content {
+        margin-left: 70px;
+    }
+
+    .sidebar a {
+        height: 68px;
+        font-size: 21px;
+    }
+
+    .banner {
+        min-height: 510px;
+    }
+
+    .banner h1 {
+        font-size: 30px;
+    }
+
+    .banner p {
+        font-size: 15px;
+    }
+
+    .gallery-section {
+        padding: 65px 25px;
+    }
+
+    .gallery-section h2 {
+        font-size: 28px;
+        margin-bottom: 40px;
+    }
+
+    .info-section {
+        padding: 60px 0;
+    }
+
+    .info-container {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .about-column {
+        padding-right: 12px;
+        padding-left: 12px;
+        margin-bottom: 15px;
+    }
+
+    .contact-column {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .info-section h2 {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 480px) {
+    .sidebar {
+        width: 60px;
+    }
+
+    .main-content {
+        margin-left: 60px;
+    }
+
+    .sidebar a {
+        height: 62px;
+        font-size: 19px;
+    }
+
+    .banner {
+        min-height: 480px;
+    }
+
+    .banner h1 {
+        font-size: 26px;
+    }
+
+    .banner p {
+        font-size: 14px;
+    }
+
+    .gallery-section {
+        padding: 55px 20px;
+    }
+
+    .info-container {
+        padding-left: 22px;
+        padding-right: 22px;
+    }
+
+    .about-column p {
+        font-size: 14px;
+    }
+
+    .contact-column .form-control {
+        font-size: 14px;
+    }
+}
