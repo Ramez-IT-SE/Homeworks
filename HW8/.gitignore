@@ -1,0 +1,10 @@
+node_modules/
+dist/
+.env
+.env.*
+.vite/
+.cache/
+coverage/
+tmp/
+temp/
+*.log
